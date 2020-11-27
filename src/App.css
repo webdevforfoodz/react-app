@@ -1,0 +1,124 @@
+@font-face {
+    font-family: myfont;
+    src: url('./assets/fonts/TTNorms-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: myfont;
+    src: url('./assets/fonts/TTNorms-ExtraBold.woff') format('woff');
+    font-weight: bold;
+}
+
+.App {
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #121212;
+    color: white;
+}
+
+/*---wave---*/
+.wave {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    animation-name: waveAni;
+    -webkit-animation: waveAni;
+    -moz-animation: waveAni;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.wave1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    animation-name: waveAni1;
+    -webkit-animation: waveAni1;
+    -moz-animation: waveAni1;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.wave2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    animation-name: waveAni2;
+    -webkit-animation: waveAni2;
+    -moz-animation: waveAni2;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes waveAni {
+    0%{opacity: .2; transform: scale(0);transform-origin: center;}
+    75%{background: white;}
+    100%{opacity: 0; transform: scale(50);transform-origin: center; background: red;}
+}
+@keyframes waveAni1 {
+    0%{opacity: .2; transform: scale(0);transform-origin: center;}
+    75%{background: white;}
+    100%{opacity: 0; transform: scale(1000);transform-origin: center; background: red;}
+}
+@keyframes waveAni2 {
+    0%{opacity: .2; transform: scale(0);transform-origin: center;}
+    75%{background: white;}
+    100%{opacity: 0; transform: scale(700);transform-origin: center; background: red;}
+}
+
+/*---left-side---*/
+
+
+/*---logo---*/
+.title-img-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: myfont;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.title-img-wrapper img {
+    margin-left: -10px;
+    animation-name: titleImg;
+    -webkit-animation: titleImg;
+    -moz-animation: titleImg;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titleImg {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-7px);}
+    100%{transform: translateY(0);}
+}
