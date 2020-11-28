@@ -5,8 +5,19 @@
 
 @font-face {
     font-family: myfont;
+    src: url('./assets/fonts/TTNorms-Medium.woff') format('woff');
+    font-weigth: medium;
+}
+
+@font-face {
+    font-family: myfont;
     src: url('./assets/fonts/TTNorms-ExtraBold.woff') format('woff');
     font-weight: bold;
+}
+
+@font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
 }
 
 .App {
@@ -15,110 +26,135 @@
     min-height: 100vh;
     background: #121212;
     color: white;
+    display: flex;
+    /* overflow: hidden; */
 }
 
-/*---wave---*/
-.wave {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: white;
-    top: 50%;
-    left: 0;
-    transform: translate(-50%,-50%);
-    animation-name: waveAni;
-    -webkit-animation: waveAni;
-    -moz-animation: waveAni;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-}
-
-.wave1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background: white;
-    top: 50%;
-    left: 0;
-    transform: translate(-50%,-50%);
-    animation-name: waveAni1;
-    -webkit-animation: waveAni1;
-    -moz-animation: waveAni1;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
-
-.wave2 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border-radius: 50%;
-    background: white;
-    top: 50%;
-    left: 0;
-    transform: translate(-50%,-50%);
-    animation-name: waveAni2;
-    -webkit-animation: waveAni2;
-    -moz-animation: waveAni2;
-    animation-duration: 5s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-}
-
-@keyframes waveAni {
-    0%{opacity: .2; transform: scale(0);transform-origin: center;}
-    75%{background: white;}
-    100%{opacity: 0; transform: scale(50);transform-origin: center; background: red;}
-}
-@keyframes waveAni1 {
-    0%{opacity: .2; transform: scale(0);transform-origin: center;}
-    75%{background: white;}
-    100%{opacity: 0; transform: scale(1000);transform-origin: center; background: red;}
-}
-@keyframes waveAni2 {
-    0%{opacity: .2; transform: scale(0);transform-origin: center;}
-    75%{background: white;}
-    100%{opacity: 0; transform: scale(700);transform-origin: center; background: red;}
-}
 
 /*---left-side---*/
+.left-side {
+    min-height: 100vh;
+    width: 230px;
+    position: relative;
+    z-index: 1;
+}
 
+.left-side nav {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 0em;
+    top: 0;
+    position: absolute;
+}
+
+.left-side nav ul {
+    text-align: center;
+    display: grid;
+    grid-gap: 5em;
+}
+
+.left-side nav ul li {
+    list-style: none;
+    padding: 15px 30px;
+    font-size: 2em;
+    font-family: myfont;
+    font-weight: medium;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    background: linear-gradient(rgb(255, 64, 64) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: all 0.4s linear;
+    position: relative;
+    cursor: pointer;
+}
+
+.left-side nav ul li:hover {
+    background-size: 100%;
+    -webkit-text-stroke: 1px rgb(255, 64, 64);
+    text-shadow: none;
+}
 
 /*---logo---*/
 .title-img-wrapper {
     display: grid;
-    align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 1em;
     font-family: myfont;
     font-weight: bold;
-    color: white;
-    font-size: 20px;
-    padding: 1em;
-    letter-spacing: 1.5px;
-    text-align: center;
+    font-size: 1.8em;
 }
 
 .title-img-wrapper img {
-    margin-left: -10px;
+    margin-left: 5px;
     animation-name: titleImg;
     -webkit-animation: titleImg;
     -moz-animation: titleImg;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 
 @keyframes titleImg {
     0%{transform: translateY(0);}
-    50%{transform: translateY(-7px);}
+    50%{transform: translateY(-3px);}
     100%{transform: translateY(0);}
 }
+
+.logo-title {
+    animation: neon 2s ease infinite;
+    -moz-animation: neon 2s ease infinite;
+    -webkit-animation: neon 2s ease infinite;
+}
+
+
+@keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, 3px 3px .1vw #806914;
+      color: #fea128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, 3px 3px .1vw #40340A;
+      color: #806914;
+    }
+}
+
+/*---right-side---*/
+.right-side {
+    position: relative;
+    width: 100%;
+    /* background-color: pink; */
+}
+
+/*---first-route---*/
+.first-route-waifu {
+    position: absolute;
+    right: 10px;
+    top: 28.2%;
+    filter: brightness(0.3);
+}
+
+.first-route-logo {
+    position: absolute;
+    top: 420px;
+    left: -50px;
+    animation-name: firstRouteLogo;
+    -webkit-animation: firstRouteLogo;
+    -moz-animation: firstRouteLogo;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes firstRouteLogo {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(0);}
+}
+
+

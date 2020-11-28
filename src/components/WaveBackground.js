@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/wave.css'
 
 function WaveBackground() {
     //css styling

@@ -1,0 +1,75 @@
+/*---wave---*/
+.wave {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    animation-name: waveAni;
+    -webkit-animation: waveAni;
+    -moz-animation: waveAni;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    z-index: 0;
+}
+
+.wave1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    animation-name: waveAni1;
+    -webkit-animation: waveAni1;
+    -moz-animation: waveAni1;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    z-index: 0;
+}
+
+.wave2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: white;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    animation-name: waveAni2;
+    -webkit-animation: waveAni2;
+    -moz-animation: waveAni2;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    z-index: 0;
+}
+
+@keyframes waveAni {
+    0%{opacity: .2; transform: scale(0);transform-origin: center;}
+    75%{background: white;}
+    100%{opacity: 0; transform: scale(50);transform-origin: center; background: red;}
+}
+@keyframes waveAni1 {
+    0%{opacity: .2; transform: scale(0);transform-origin: center;}
+    75%{background: white;}
+    100%{opacity: 0; transform: scale(1000);transform-origin: center; background: red;}
+}
+@keyframes waveAni2 {
+    0%{opacity: .2; transform: scale(0);transform-origin: center;}
+    75%{background: white;}
+    100%{opacity: 0; transform: scale(700);transform-origin: center; background: red;}
+}
