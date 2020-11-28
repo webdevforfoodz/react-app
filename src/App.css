@@ -27,7 +27,7 @@
     background: #121212;
     color: white;
     display: flex;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -131,30 +131,6 @@
     /* background-color: pink; */
 }
 
-/*---first-route---*/
-.first-route-waifu {
-    position: absolute;
-    right: 10px;
-    top: 28.2%;
-    filter: brightness(0.3);
-}
 
-.first-route-logo {
-    position: absolute;
-    top: 420px;
-    left: -50px;
-    animation-name: firstRouteLogo;
-    -webkit-animation: firstRouteLogo;
-    -moz-animation: firstRouteLogo;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes firstRouteLogo {
-    0%{transform: translateY(0);}
-    50%{transform: translateY(-20px);}
-    100%{transform: translateY(0);}
-}
 
 
