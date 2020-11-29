@@ -12,12 +12,20 @@ class Typer extends React.Component {
             text: '',
             isDeleting: false,
             loopNum: 0,
-            typingSpeed: 150
+            typingSpeed: 150,
+            mounted:false,
         }
     }
 
     componentDidMount() {
-        this.handleType();
+        this.mounted = true;
+        if (this.mounted === true) {
+            this.handleType();
+        }
+    }
+
+    componentWillUnmount() {
+        this.mounted = false;
     }
 
     handleType = () => {

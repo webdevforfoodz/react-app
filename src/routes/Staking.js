@@ -4,6 +4,7 @@ import Wallet from "../hooks/Wallet.js";
 import Typer from "../components/Typing.js";
 import StakingUI from '../components/StakingUI.js';
 import StakingUI2 from '../components/StakingUI2.js';
+import logo from '../assets/staking-waifu1.png'
 
 function Staking() {
   return (
@@ -31,6 +32,9 @@ function Staking() {
         </div>
         <div className="box8">
             <StakingUI2 token1="$UNI-V2" token2="$HAREM" />
+        </div>
+        <div className="staking-logo-mobile">
+          <img src={logo} alt=""/>
         </div>
       </div>
     </div>

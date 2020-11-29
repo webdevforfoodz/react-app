@@ -78,3 +78,25 @@
       color: #806914;
     }
     } */
+
+
+@media only screen and (max-width: 1250px) {
+    .title-img-wrapper { 
+      padding: 1em 1em 0 0;
+    }
+
+      .logo-title {
+        font-size: 1.2em;
+      }
+
+      .logo-title1 {
+        font-size: 2.2em;
+      }
+}
+
+@media only screen and (max-width: 700px) { 
+  .title-img-wrapper {
+    
+   }
+}
+

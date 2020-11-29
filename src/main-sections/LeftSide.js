@@ -12,7 +12,7 @@ function LeftSide() {
   return (
     <div className="left-side">
       <Logo />
-      <nav>
+      <nav >
         <ul>
           <Link to='/' style={linkStyle}>
             <li>Waifus</li>
