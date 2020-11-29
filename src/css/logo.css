@@ -1,0 +1,80 @@
+/*---logo---*/
+.title-img-wrapper {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 2em;
+    grid-gap: 0.7em;
+    font-family: neon;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 1em;
+}
+
+.title-img-wrapper img {
+    text-align: center;
+    margin-left: 5%;
+    animation-name: titleImg;
+    -webkit-animation: titleImg;
+    -moz-animation: titleImg;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titleImg {
+    0%{transform: translateY(0);}
+    50%{transform: translateY(-3px);}
+    100%{transform: translateY(0);}
+}
+
+.logo-title {
+    animation: neon1 1s ease infinite;
+    -moz-animation: neon1 1s ease infinite;
+    -webkit-animation: neon1 1s ease infinite;
+    font-size: 1.5em;
+}
+
+.logo-title1 {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+    font-size: 3em;
+}
+
+
+@keyframes neon {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #ca1913, 3px 3px .1vw #800E0B;
+      color: #fe4828;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, 3px 3px .1vw #460806;
+      color: #912a18;
+    }
+}
+
+@keyframes neon1 {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, 3px 3px .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, 3px 3px .1vw #0A3940;
+      color: #146C80;
+    }
+  }
+
+  /* @keyframes neon1 {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, 3px 3px .1vw #806914;
+      color: #FED128;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, 3px 3px .1vw #40340A;
+      color: #806914;
+    }
+    } */

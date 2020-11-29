@@ -1,20 +1,28 @@
 // import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 // import NavBar from './main-sections/NavBar.js';
-import Wave from './components/WaveBackground.js'
-import LeftSide from './main-sections/LeftSide.js'
-import RightSide from './main-sections/RightSide.js'
+import Wave from "./components/WaveBackground.js";
+import LeftSide from "./main-sections/LeftSide.js";
+import FirstRoute from "./routes/FirstRoute.js";
+import Staking from "./routes/Staking.js";
+import SecondRoute from './routes/SecondRoute.js';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-
   //
 
   return (
-    <div className="App">
-      <LeftSide />
-      <RightSide />
-      <Wave />
-    </div>
+    <Router>
+      <div className="App">
+        <LeftSide />
+        <Switch>
+          <Route path="/" exact component={FirstRoute} />
+          <Route path="/mywaifus" exact component={SecondRoute} />
+          <Route path="/staking" component={Staking} />
+        </Switch>
+        <Wave />
+      </div>
+    </Router>
   );
 }
 

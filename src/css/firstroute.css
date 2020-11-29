@@ -1,16 +1,23 @@
-/*---first-route---*/
-.first-route-waifu {
-    position: absolute;
-    right: 10px;
-    top: 29%;
-    filter: brightness(0.3);
+.first-route {
+    position: relative;
+    background-color: red;
+    text-align: end;
+    width: 100%;
+}
+
+.first-route-img-wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    filter: brightness(0.4);
 }
 
 .first-route-logo {
+    width: 12%;
     position: absolute;
-    top: 45%;
-    left: -6%;
-    width: 35%;
+    top: 43%;
+    left: 68%;
     animation-name: firstRouteLogo;
     -webkit-animation: firstRouteLogo;
     -moz-animation: firstRouteLogo;
@@ -19,74 +26,14 @@
     animation-iteration-count: infinite;
 }
 
-.first-route-waifu-img{
-    width: 100%;
+.first-route-waifu {
+    width: 30%;
 }
 
 @keyframes firstRouteLogo {
-    0%{transform: translateY(0);}
-    50%{transform: translateY(-20px);}
-    100%{transform: translateY(0);}
+    0%, 100%{transform: translateY(0); -webkit-filter: drop-shadow(5px 5px 15px rgba(255, 255, 255,.8));
+                    filter: drop-shadow(5px 5px 15px rgba(255, 255, 255,.8));}
+    50%{transform: translateY(-15%);-webkit-filter: drop-shadow(5px 5px 15px rgba(255, 255, 255,0.5));
+                    filter: drop-shadow(5px 5px 15px rgba(255, 255, 255,0.5));}
 }
 
-@media only screen and (max-height: 1300px) {
-    .first-route-waifu {
-        top: 39%;
-        transform: translateX(20%);
-    }
-
-    .first-route-logo {
-        width: 27%;
-        left: 13%;
-    }
-
-    .first-route-waifu-img {
-        transform: scale(0.6);
-    }
-}
-
-@media only screen and (max-height: 1000px) {
-    .first-route-waifu {
-        top: 27%;
-        transform: translateX(25%);
-    }
-
-    .first-route-logo {
-        width: 24%;
-        left: 18%;
-    }
-
-    .first-route-waifu-img {
-        transform: scale(0.5);
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .first-route-waifu {
-        transform: translateX(16%);
-    }
-
-    .first-route-logo {
-        width: 31%;
-        left: 6%;
-    }
-
-    .first-route-waifu-img {
-        transform: scale(0.7);
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .first-route-waifu {
-        transform: translateX(2%);
-    }
-
-    .first-route-logo {
-        width: 40%;
-        left: -8%;
-    }
-
-    .first-route-waifu-img {
-        transform: scale(1);
-    }
-}

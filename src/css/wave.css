@@ -73,3 +73,57 @@
     75%{background: white;}
     100%{opacity: 0; transform: scale(700);transform-origin: center; background: red;}
 }
+
+@media only screen and (max-width: 1250px) {
+    @keyframes waveAni {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(40);transform-origin: center; background: red;}
+    }
+    @keyframes waveAni1 {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(900);transform-origin: center; background: red;}
+    }
+    @keyframes waveAni2 {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(600);transform-origin: center; background: red;}
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    @keyframes waveAni {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(30);transform-origin: center; background: red;}
+    }
+    @keyframes waveAni1 {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(700);transform-origin: center; background: red;}
+    }
+    @keyframes waveAni2 {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(500);transform-origin: center; background: red;}
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    @keyframes waveAni {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(20);transform-origin: center; background: red;}
+    }
+    @keyframes waveAni1 {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(500);transform-origin: center; background: red;}
+    }
+    @keyframes waveAni2 {
+        0%{opacity: .2; transform: scale(0);transform-origin: center;}
+        75%{background: white;}
+        100%{opacity: 0; transform: scale(400);transform-origin: center; background: red;}
+    }
+}

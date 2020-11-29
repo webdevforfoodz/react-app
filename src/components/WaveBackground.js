@@ -6,7 +6,7 @@ function WaveBackground() {
     
 
     return(
-        <div>
+        <div >
             <div className="wave"></div>
             <div className="wave1"></div>
             <div className="wave2"></div>
