@@ -14,18 +14,16 @@ class Typer extends React.Component {
             loopNum: 0,
             typingSpeed: 150,
             mounted:false,
+            typingTimeOut:'',
         }
     }
 
     componentDidMount() {
-        this.mounted = true;
-        if (this.mounted === true) {
-            this.handleType();
-        }
+        this.handleType();
     }
 
     componentWillUnmount() {
-        this.mounted = false;
+        clearInterval(this.typingTimeOut)
     }
 
     handleType = () => {
@@ -48,7 +46,7 @@ class Typer extends React.Component {
             });
         }
 
-        setTimeout(this.handleType, typingSpeed);
+        this.typingTimeOut = setTimeout(this.handleType, typingSpeed);
 
     }
 

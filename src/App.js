@@ -2,7 +2,7 @@
 import "./App.css";
 // import NavBar from './main-sections/NavBar.js';
 import Wave from "./components/WaveBackground.js";
-import LeftSide from "./main-sections/LeftSide.js";
+import NavBar from "./components/NavBar.js"
 import FirstRoute from "./routes/FirstRoute.js";
 import Staking from "./routes/Staking.js";
 import SecondRoute from './routes/SecondRoute.js';
@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <LeftSide />
+        <NavBar />
         <Switch>
           <Route path="/" exact component={FirstRoute} />
           <Route path="/mywaifus" exact component={SecondRoute} />

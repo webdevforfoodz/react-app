@@ -1,17 +1,19 @@
 /*---logo---*/
 .title-img-wrapper {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    padding: 2em;
-    grid-gap: 0.7em;
-    font-family: neon;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-left: 1em;
+  display: grid;
+  grid-gap: 7px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+  letter-spacing: 1.5px;
+  height: 110px;
+  font-family: neon;
+  width: 230px;
+  position: absolute;
 }
 
-.title-img-wrapper img {
+/* .title-img-wrapper img {
     text-align: center;
     margin-left: 5%;
     animation-name: titleImg;
@@ -20,13 +22,13 @@
     animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
+} */
 
-@keyframes titleImg {
+/* @keyframes titleImg {
     0%{transform: translateY(0);}
     50%{transform: translateY(-3px);}
     100%{transform: translateY(0);}
-}
+} */
 
 .logo-title {
     animation: neon1 1s ease infinite;
@@ -78,25 +80,4 @@
       color: #806914;
     }
     } */
-
-
-@media only screen and (max-width: 1250px) {
-    .title-img-wrapper { 
-      padding: 1em 1em 0 0;
-    }
-
-      .logo-title {
-        font-size: 1.2em;
-      }
-
-      .logo-title1 {
-        font-size: 2.2em;
-      }
-}
-
-@media only screen and (max-width: 700px) { 
-  .title-img-wrapper {
-    
-   }
-}
 

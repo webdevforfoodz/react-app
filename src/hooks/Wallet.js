@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { updateWallet, getWaifuBalance, getWaifuStaked, getHaremEarned } from '../actions';
+import { updateWallet, getWaifuBalance} from '../actions';
 import { useDispatch } from 'react-redux';
 import Web3 from 'web3';
 

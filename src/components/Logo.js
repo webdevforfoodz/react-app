@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.png'
 import '../css/logo.css'
 
-function Title() {
+function Logo() {
     return(
         <div className="title-img-wrapper">
             {/* <img src={logo} alt="logo" style={{width: '180px'}}/> */}
@@ -12,4 +12,4 @@ function Title() {
     )
 }
 
-export default Title;
+export default Logo;
