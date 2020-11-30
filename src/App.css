@@ -34,8 +34,8 @@
 
 .wallet {
     position: absolute;
-    top: 1%;
-    right: 1%;
+    bottom: 0.5%;
+    left: 1%;
     font-family: myfont;
     color: white;
 }

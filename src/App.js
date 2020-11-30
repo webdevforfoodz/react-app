@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar.js"
 import FirstRoute from "./routes/FirstRoute.js";
 import Staking from "./routes/Staking.js";
 import SecondRoute from './routes/SecondRoute.js';
+import Wallet from './hooks/Wallet.js'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Wallet />
         <NavBar />
         <Switch>
           <Route path="/" exact component={FirstRoute} />

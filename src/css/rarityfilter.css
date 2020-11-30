@@ -1,0 +1,105 @@
+/*-----------------------*/
+
+.rarity-filter {
+    display: grid;
+    justify-content: center;
+    grid-gap: 1em;
+    padding: 2em 0;
+    /* background: rgb(104, 54, 36); */
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    list-style: none;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.rarity-filter-link {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: myfont;
+    font-weight: 500;
+    padding: 15px 0;
+    width: 110px;
+    margin: auto;
+    transition: all 0.3s linear;
+    position: relative;
+}
+
+.rarity-filter-link span {
+    content: '';
+    position: absolute;
+    transition: all 0.3s linear;
+    background-color: whitesmoke;
+}
+
+.rarity-filter-link span:nth-child(1) {
+    height: 2px;
+    width: 110px;
+    top: 0;
+    right: 0;
+}
+.rarity-filter-link span:nth-child(2) {
+    height: 2px;
+    width: 110px;
+    bottom: 0;
+    left: 0;
+}
+.rarity-filter-link span:nth-child(3) {
+    top: 0;
+    right: 0;
+    height: 0;
+    width: 3px;
+}
+.rarity-filter-link span:nth-child(4) {
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 3px;
+}
+
+.rarity-filter-link:hover span:nth-child(1) {
+    width: 0;
+}
+.rarity-filter-link:hover span:nth-child(2) {
+    width: 0;
+}
+.rarity-filter-link:hover span:nth-child(3) {
+    height: 100%;
+}
+.rarity-filter-link:hover span:nth-child(4) {
+    height: 100%;
+}
+
+/*-----------------------------*/
+.rarity-filter-link.first span:nth-child(3),
+.rarity-filter-link.first span:nth-child(4) {
+    background-color: rgb(204, 47, 47);
+}
+
+.rarity-filter-link.second span:nth-child(3),
+.rarity-filter-link.second span:nth-child(4) {
+    background-color: rgb(45, 66, 187);
+}
+
+.rarity-filter-link.third span:nth-child(3),
+.rarity-filter-link.third span:nth-child(4) {
+    background-color: rgb(255, 132, 61);
+}
+
+.rarity-filter-link.fourth span:nth-child(3),
+.rarity-filter-link.fourth span:nth-child(4) {
+    background-color: rgb(29, 163, 197);
+}
+
+.rarity-filter-link.fifth span:nth-child(3),
+.rarity-filter-link.fifth span:nth-child(4) {
+    background-color: rgb(61, 255, 142);
+}
+
+@media only screen and (max-width: 500px) {
+    .rarity-filter {
+        width: 80%;
+        padding: 1em 0;
+    }
+
+}
