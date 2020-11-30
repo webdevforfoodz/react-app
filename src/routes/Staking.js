@@ -33,9 +33,9 @@ function Staking() {
         <div className="box8">
             <StakingUI2 token1="$UNI-V2" token2="$HAREM" />
         </div>
-        <div className="staking-logo-mobile">
+        {/* <div className="staking-logo-mobile">
           <img src={logo} alt=""/>
-        </div>
+        </div> */}
       </div>
     </div>
   );
