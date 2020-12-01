@@ -8,7 +8,7 @@
     {
         "id": "2",
         "name": "Witch Enjin",
-        "rarity": "Legendary",
+        "rarity": "Heirloom",
         "image": "/data/enjin.jpg"
     },
     {
@@ -26,13 +26,13 @@
     {
         "id": "5",
         "name": "RSR Boss",
-        "rarity": "Legendary",
+        "rarity": "Rare",
         "image": "/data/rsr.gif"
     },
     {
         "id": "6",
         "name": "Random",
-        "rarity": "Legendary",
+        "rarity": "Super Rare",
         "image": "/data/unnamed.gif"
     }
 ]

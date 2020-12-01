@@ -23,6 +23,7 @@
     margin: auto;
     transition: all 0.3s linear;
     position: relative;
+    cursor: pointer;
 }
 
 .rarity-filter-link span {

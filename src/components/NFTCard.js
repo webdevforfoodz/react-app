@@ -4,7 +4,7 @@ function NFTCard(props) {
     return(
         <div className="NFT-card-wrapper" >
             <div className="NFT-card-image">
-                <img src={props.image} alt=""/>
+                <img src={process.env.PUBLIC_URL + props.image} alt=""/>
             </div>
             <div className="NFT-card-name">
                 {props.name}
