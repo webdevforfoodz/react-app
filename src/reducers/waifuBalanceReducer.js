@@ -1,4 +1,4 @@
-export default function getWaifuBalance( state=['Please Connnect Your Wallet','Please Connnect Your Wallet','Please Connnect Your Wallet'], action ) {
+export default function getWaifuBalance( state=['Locked','Locked','Locked'], action ) {
     switch (action.type) {
         case 'UPDATEWAIFUBALANCE':
             return action.payload;

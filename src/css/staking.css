@@ -436,14 +436,14 @@
 
     .staking {
         height: 100%;
-        transform: translateY(-8%);
+        transform: translateY(-12%);
     }
 
     .staking-gridbox {
         width: 100%;
         grid-template-columns: 500px;
         grid-template-rows: repeat(0.25vh,1fr);
-        grid-gap: 3em;
+        grid-gap: 7em;
     }
 
     .box6, .box7 {
@@ -457,7 +457,8 @@
 
     .box7 {
         position: absolute;
-        transform: translateY(190%);
+        width: 80%;
+        transform: translate(14%,220%);
     }
 
     .image1, .image2 {
@@ -496,5 +497,9 @@
     .dialogue2 {
         padding:10px;
         width: 50%;
+    }
+    .box7 {
+        width: 100%;
+        transform: translate(1%,220%);
     }
 }
