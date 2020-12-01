@@ -7,7 +7,7 @@ import * as FaIcons from 'react-icons/fa';
 function RarityFilter() {
 
     useEffect(() => {
-        fetch('data/nftapi.json').then(res => res.json()).then(data => setData(data));
+        fetch(process.env.PUBLIC_URL + 'data/nftapi.json').then(res => res.json()).then(data => setData(data));
     },[]);
 
     const [data,setData] = useState([]);
