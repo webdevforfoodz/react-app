@@ -488,4 +488,13 @@
         top: 65%;
         right: -35%;
     }
+
+    .dialogue1 {
+        padding:10px;
+        width: 47%;
+    }
+    .dialogue2 {
+        padding:10px;
+        width: 50%;
+    }
 }

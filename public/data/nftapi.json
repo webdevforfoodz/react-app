@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "Queen of The East",
+        "rarity": "Common",
+        "image": "/data/bnbcommon.gif"
+    },
+    {
+        "id": "2",
+        "name": "Witch Enjin",
+        "rarity": "Legendary",
+        "image": "/data/enjin.jpg"
+    },
+    {
+        "id": "3",
+        "name": "Lord ADA",
+        "rarity": "Legendary",
+        "image": "/data/legendary.gif"
+    },
+    {
+        "id": "4",
+        "name": "RSR Boss",
+        "rarity": "Legendary",
+        "image": "/data/legendary1.gif"
+    },
+    {
+        "id": "5",
+        "name": "RSR Boss",
+        "rarity": "Legendary",
+        "image": "/data/rsr.gif"
+    },
+    {
+        "id": "6",
+        "name": "Random",
+        "rarity": "Legendary",
+        "image": "/data/unnamed.gif"
+    }
+]

@@ -23,7 +23,7 @@ class Typer extends React.Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.typingTimeOut)
+        clearTimeout(this.typingTimeOut)
     }
 
     handleType = () => {

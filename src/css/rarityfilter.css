@@ -73,7 +73,7 @@
 /*-----------------------------*/
 .rarity-filter-link.first span:nth-child(3),
 .rarity-filter-link.first span:nth-child(4) {
-    background-color: rgb(204, 47, 47);
+    background-color: rgb(211, 52, 52);
 }
 
 .rarity-filter-link.second span:nth-child(3),
@@ -93,7 +93,7 @@
 
 .rarity-filter-link.fifth span:nth-child(3),
 .rarity-filter-link.fifth span:nth-child(4) {
-    background-color: rgb(61, 255, 142);
+    background-color: rgb(63, 63, 63);
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,0 +1,23 @@
+.gallery {
+    font-family: myfont;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.NFT-card-image img {
+    width: 50%;
+} 
+
+.NFT-card-name {
+    color: grey;
+}
+
+.NFT-card-rarity {
+    color: goldenrod;
+}
