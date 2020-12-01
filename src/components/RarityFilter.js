@@ -72,15 +72,22 @@ function RarityFilter() {
                     <span></span>
                     <li>Common</li>              
                 </div>
+                <div className="rarity-filter-link fifth" onClick={() => changeData('',1)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <li>All</li>              
+                </div>
             </ul>
             <div className="rarity-filter-searchbar">
-                <div className="all-btn" onClick={() => changeData('',1)}>
+                {/* <div className="all-btn" onClick={() => changeData('',1)}>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     <li>All</li>
-                </div>
+                </div> */}
                 <div className="searchbar">
                     <input id="input" type="text" name="name" placeholder="NFT name" />
                     <FaIcons.FaSearch className="search-btn" onClick={getNFT} />

@@ -1,15 +1,25 @@
 /*-----------------------*/
 
-.rarity-filter {
+/* .rarity-filter {
     display: grid;
     justify-content: center;
     grid-gap: 1em;
     padding: 2em 0;
-    /* background: rgb(104, 54, 36); */
+    background: rgb(104, 54, 36);
     grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
     list-style: none;
     text-align: center;
     width: 90%;
+    margin: auto;
+} */
+
+.rarity-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1.5em 0 1em 0;
+    list-style: none;
+    width: 85%;
     margin: auto;
 }
 
@@ -20,10 +30,11 @@
     font-weight: 500;
     padding: 15px 0;
     width: 110px;
-    margin: auto;
+    text-align: center;
     transition: all 0.3s linear;
     position: relative;
     cursor: pointer;
+    margin: 0 10px 20px 10px;
 }
 
 .rarity-filter-link span {
@@ -95,6 +106,38 @@
 .rarity-filter-link.fifth span:nth-child(3),
 .rarity-filter-link.fifth span:nth-child(4) {
     background-color: rgb(63, 63, 63);
+}
+
+@media only screen and (max-width: 781px) { 
+    .rarity-filter {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 738px) { 
+    .rarity-filter {
+        display: grid;
+        justify-content: center;
+        grid-gap: 1em;
+        padding: 2em 0;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        list-style: none;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 737px) { 
+    .rarity-filter {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 1.5em 0 0 0;
+        list-style: none;
+        width: 85%;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 500px) {

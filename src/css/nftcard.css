@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 1em 0 6em 0;
+    padding: 1em 0 4em 0;
     font-family: myfont;
     list-style: none;
 }
@@ -60,7 +60,7 @@
     color: rgb(255, 119, 119);
 }
 
-.all-btn {
+/* .all-btn {
     position: relative;
     padding: 1em;
     transition: all 0.3s linear;
@@ -114,4 +114,4 @@
 .all-btn:hover span:nth-child(4) {
     background: goldenrod;
     height: 100%;
-}
+} */
