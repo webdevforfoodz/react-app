@@ -6,12 +6,13 @@ import lantern from '../assets/lantern1.png'
 import shywaifu from '../assets/shywaifu.png'
 import welcomewaifu from '../assets/welcome-waifu.png'
 import { Link } from "react-router-dom";
-
+import Logo from '../components/LogoLanding';
 
 function LandingPage() {
 
     return(
         <div className="landingpage" >
+            <Logo />
             <img className="landingpage-moon" src={moon} alt=""/>
             <div className="landingpage-img-wrapper">
                 <div className="landingpage-img-container">

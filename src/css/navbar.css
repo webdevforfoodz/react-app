@@ -1,12 +1,13 @@
 /*---left-side---*/
 
 .nav-menu {
-    width: 230px;
+    width: 250px;
     text-align: center;
     position: relative;
     transition: all 0.3s ease-in-out;
     z-index: 2;
     height: 100vh;
+    /* background-color: pink; */
 }
 
 /* .nav-menu-close-btn {
@@ -27,6 +28,8 @@
     cursor: pointer;
     position: absolute;
     z-index: 2;
+    left: 0;
+    top: 0;
 }
 
 .nav-menu ul {

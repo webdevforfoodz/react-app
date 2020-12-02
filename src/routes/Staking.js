@@ -3,10 +3,14 @@ import "../css/staking.css";
 import Typer from "../components/Typing.js";
 import StakingUI from '../components/StakingUI.js';
 import StakingUI2 from '../components/StakingUI2.js';
+import Wave from "../components/WaveBackground.js";
+import NavBar from "../components/NavBar.js"
 
 function Staking() {
   return (
     <div className="staking">
+      <NavBar />
+      <Wave />
       <div className="staking-gridbox">
         <div className="box5">
             <StakingUI token1="$WAIFU" token2="$HAREM" />
