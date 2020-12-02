@@ -315,7 +315,7 @@
         font-size: 480%;
     }
     .landing-logo-img-wrapper {
-        top: 10%;
+        top: 25%;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -333,7 +333,7 @@
         font-size: 450%;
     }
     .landing-logo-img-wrapper {
-        top: 5%;
+        top: 25%;
     }
     .landingpage-moon {
         width: 80px;
