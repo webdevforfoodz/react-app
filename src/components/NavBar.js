@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import '../css/navbar.css';
 import Logo from '../components/Logo.js';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
 
 
 function NavBar() {
@@ -27,7 +26,7 @@ function NavBar() {
         {/* <AiIcons.AiOutlineCloseCircle className="nav-menu-close-btn" onClick={showSidebar}/> */}
         <Logo />
         <ul>
-          <Link to='/' style={linkStyle} onClick={showSidebar}>
+          <Link to='/gallery' style={linkStyle} onClick={showSidebar}>
             <li>Waifus</li>
           </Link>
           <Link to='/mywaifus' style={linkStyle} onClick={showSidebar}>

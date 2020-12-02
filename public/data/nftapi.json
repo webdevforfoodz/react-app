@@ -1,11 +1,5 @@
 [
     {
-        "id": "1",
-        "name": "Queen of The East",
-        "rarity": "Common",
-        "image": "/data/bnbcommon.gif"
-    },
-    {
         "id": "2",
         "name": "Witch Enjin",
         "rarity": "Heirloom",
@@ -24,15 +18,21 @@
         "image": "/data/legendary1.gif"
     },
     {
+        "id": "6",
+        "name": "Random",
+        "rarity": "Super Rare",
+        "image": "/data/unnamed.gif"
+    },
+    {
         "id": "5",
         "name": "RSR Boss",
         "rarity": "Rare",
         "image": "/data/rsr.gif"
     },
     {
-        "id": "6",
-        "name": "Random",
-        "rarity": "Super Rare",
-        "image": "/data/unnamed.gif"
+        "id": "1",
+        "name": "Queen of The East",
+        "rarity": "Common",
+        "image": "/data/bnbcommon.gif"
     }
 ]

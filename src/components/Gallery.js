@@ -1,10 +1,10 @@
 import React, { useState, useEffect} from 'react';
-import NFTCard from '../components/NFTCard';
+import NFTCard from './NFTCard';
 import '../css/nftcard.css'
 import * as FaIcons from 'react-icons/fa';
 
 
-function RarityFilter() {
+function Gallery() {
 
     useEffect(() => {
         fetch(process.env.PUBLIC_URL + 'data/nftapi.json').then(res => res.json()).then(data => setData(data));
@@ -95,11 +95,11 @@ function RarityFilter() {
             </div>
             <div className="gallery">
                 {result.map(nft => (
-                    <NFTCard name={nft.name} rarity={nft.rarity} image={nft.image} key={nft.id}/>
+                    <NFTCard name={nft.name} rarity={nft.rarity} image={nft.image} key={nft.id} id={nft.id}/>
                 ))}
             </div>
         </>
     )
 }
 
-export default RarityFilter;
+export default Gallery;
