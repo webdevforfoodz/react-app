@@ -27,7 +27,7 @@ function NavBar() {
         <Logo />
         <ul>
           <Link to='/gallery' style={linkStyle} onClick={showSidebar}>
-            <li>Waifus</li>
+            <li>Gallery</li>
           </Link>
           <Link to='/mywaifus' style={linkStyle} onClick={showSidebar}>
             <li>My Waifus</li>
