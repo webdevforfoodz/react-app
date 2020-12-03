@@ -2,6 +2,7 @@
     min-height: 100vh;
     width: 100%;
     background-color: #121212;
+    overflow: hidden;
 }
 
 .landingpage::before {
@@ -33,7 +34,7 @@
 }
 
 .landing-gate {
-    width: 1100px;
+    width: 1000px;
     position: relative;
     z-index: 1;
 }
@@ -184,266 +185,151 @@
 
 }
 
-@keyframes fly-cycle {
-	
-	100% {
-		background-position: -900px 0;
-	}
-	
-}
 
-@keyframes fly-right-one {
-	
-	0% {
-		transform: scale(0.3) translateX(-10vw);
-	}
-	
-	10% {
-		transform: translateY(2vh) translateX(10vw) scale(0.4);
-	}
-	
-	20% {
-		transform: translateY(0vh) translateX(30vw) scale(0.5);
-	}
-	
-	30% {
-		transform: translateY(4vh) translateX(50vw) scale(0.6);
-	}
-	
-	40% {
-		transform: translateY(2vh) translateX(70vw) scale(0.6);
-	}
-	
-	50% {
-		transform: translateY(0vh) translateX(90vw) scale(0.6);
-	}
-	
-	60% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
-	}
-	
-	100% {
-		transform: translateY(0vh) translateX(110vw) scale(0.6);
-	}
-	
-}
-
-@keyframes fly-right-two {
-	
-	0% {
-		transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-	}
-	
-	10% {
-		transform: translateY(0vh) translateX(10vw) scale(0.4);
-	}
-	
-	20% {
-		transform: translateY(-4vh) translateX(30vw) scale(0.6);
-	}
-	
-	30% {
-		transform: translateY(1vh) translateX(50vw) scale(0.45);
-	}
-	
-	40% {
-		transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-	}
-	
-	50% {
-		transform: translateY(0vh) translateX(90vw) scale(0.45);
-	}
-	
-	51% {
-		transform: translateY(0vh) translateX(110vw) scale(0.45);
-	}
-	
-	100% {
-		transform: translateY(0vh) translateX(110vw) scale(0.45);
-	}
-	
-}
-
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 2300px) {
     .landing-gate {
-        width: 750px;
+        width: 800px;
     }
     .landingpage-menu {
         top: 50%;
         font-size: 200%;
     }
     .landing-logo-title {
-        font-size: 170%;
+        font-size: 250%;
     }
     .landing-logo-title1 {
-        font-size: 550%;
+        font-size: 750%;
     }
     .landing-logo-img-wrapper {
-        top: 15%;
+        top: 5%;
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1600px) and (max-height:900px) {
     .landing-gate {
-        width: 650px;
+        width: 600px;
     }
     .landingpage-menu {
         top: 50%;
         font-size: 200%;
     }
     .landing-logo-title {
-        font-size: 170%;
+        font-size: 200%;
     }
     .landing-logo-title1 {
         font-size: 550%;
     }
     .landing-logo-img-wrapper {
-        top: 15%;
-    }
-    .landingpage-moon {
-        width: 120px;
+        top: 5%;
     }
 }
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 1300px) and (max-height:800px) {
     .landing-gate {
-        width: 450px;
+        width: 500px;
     }
     .landingpage-menu {
-        top: 50%;
-        font-size: 130%;
+        top: 45%;
+        font-size: 170%;
     }
     .landing-logo-title {
-        font-size: 140%;
+        font-size: 200%;
     }
     .landing-logo-title1 {
-        font-size: 480%;
+        font-size: 550%;
     }
     .landing-logo-img-wrapper {
-        top: 15%;
+        top: 5%;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1060px) and (max-height:690px) {
     .landing-gate {
-        width: 330px;
+        width: 400px;
     }
     .landingpage-menu {
-        top: 50%;
-        font-size: 100%;
+        top: 45%;
+        font-size: 150%;
     }
     .landing-logo-title {
-        font-size: 120%;
+        font-size: 170%;
     }
     .landing-logo-title1 {
         font-size: 450%;
     }
     .landing-logo-img-wrapper {
-        top: 25%;
-    }
-    .landingpage-moon {
-        width: 80px;
-    }
-}
-@media only screen and (max-height: 1300px) {
-    .landing-gate {
-        width: 850px;
-    }
-}
-@media only screen and (max-height: 1150px) {
-    .landing-gate {
-        width: 750px;
-    }
-}
-@media only screen and (max-height: 1050px) {
-    .landing-gate {
-        width: 650px;
-    }
-    .landingpage-menu {
-        top: 45%;
-        font-size: 200%;
-    }
-    .landing-logo-title {
-        font-size: 200%;
-    }
-    .landing-logo-title1 {
-        font-size: 600%;
-    }
-}
-@media only screen and (max-height: 950px) {
-    .landing-gate {
-        width: 550px;
-    }
-}
-@media only screen and (max-height: 850px) {
-    .landing-gate {
-        width: 450px;
-    }
-    .landingpage-menu {
-        top: 45%;
-        font-size: 150%;
-    }
-    .landing-logo-title {
-        font-size: 150%;
-    }
-    .landing-logo-title1 {
-        font-size: 500%;
-    }
-    .landing-logo-img-wrapper {
-        top: 10%;
+        top: 9%;
     }
     .landingpage-moon {
         width: 100px;
     }
 }
-@media only screen and (max-height: 750px) {
+@media only screen and (max-width: 850px) and (max-height:590px) {
     .landing-gate {
-        width: 350px;
+        width: 300px;
     }
     .landingpage-menu {
-        top: 47%;
-        font-size: 100%;
+        top: 45%;
+        font-size: 120%;
     }
     .landing-logo-title {
         font-size: 130%;
     }
     .landing-logo-title1 {
-        font-size: 470%;
+        font-size: 400%;
     }
     .landing-logo-img-wrapper {
-        top: 15%;
+        top: 12%;
     }
 }
-@media only screen and (max-height: 700px) {
+@media only screen and (max-width: 500px) and (max-height:500px) {
     .landing-gate {
-        width: 320px;
+        width: 300px;
     }
     .landingpage-menu {
-        top: 47%;
-        font-size: 100%;
+        top: 45%;
+        font-size: 120%;
     }
     .landing-logo-title {
-        font-size: 100%;
+        font-size: 110%;
     }
     .landing-logo-title1 {
-        font-size: 430%;
+        font-size: 300%;
     }
     .landing-logo-img-wrapper {
-        top: 10%;
+        top: 8%;
     }
 }
-@media only screen and (max-height: 550px) {
+@media only screen and (max-width: 430px) and (max-height:820px) {
     .landing-gate {
-        width: 320px;
+        width: 300px;
     }
     .landingpage-menu {
-        top: 47%;
-        font-size: 100%;
+        top: 45%;
+        font-size: 120%;
     }
     .landing-logo-title {
-        font-size: 100%;
+        font-size: 110%;
     }
     .landing-logo-title1 {
-        font-size: 430%;
+        font-size: 300%;
     }
     .landing-logo-img-wrapper {
-        top: 5%;
+        top: 22%;
+    }
+}
+@media only screen and (max-width: 430px) and (max-height:680px) {
+    .landing-gate {
+        width: 300px;
+    }
+    .landingpage-menu {
+        top: 45%;
+        font-size: 120%;
+    }
+    .landing-logo-title {
+        font-size: 110%;
+    }
+    .landing-logo-title1 {
+        font-size: 300%;
+    }
+    .landing-logo-img-wrapper {
+        top: 8%;
     }
 }
