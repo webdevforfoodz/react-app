@@ -4,14 +4,14 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
+    background-color: #121212;
 }
 
 .staking-gridbox {
     display: grid;
     justify-content: center;
-    grid-template-columns: 600px 500px;
-    grid-template-rows: repeat(0.5vh,1fr);
-    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
     min-height: 90%;
     align-items: center;
     margin: auto;
@@ -30,7 +30,7 @@
     display: grid;
 }
 
-.box5 {
+.box5, .box8 {
     /* background-color: rgb(82, 82, 82); */
     display: flex;
     justify-content: center;
@@ -53,10 +53,12 @@
 
 .image1 {
     background-image: url('../assets/staking-waifu.png');
-    height: 80%;
+    height: 100%;
+    background-size: 80%;
+    background-position: center;
     clip-path: polygon(0 30%, 30% 30%, 30% 0, 70% 0, 70% 30%, 100% 30%, 100% 70%, 70% 70%, 70% 100%, 30% 100%, 30% 70%, 0 70%);
     background-color: whitesmoke;
-    background-position-x: 0%;
+    background-position-x: 40%;
     background-repeat: no-repeat;
 }
 
@@ -65,160 +67,11 @@
     background-color: rgb(255, 60, 60);
     text-align: center;
     padding: 1em 1em 2em 1em;
-    width: 255px;
-    height: 60px;
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 32% 75%, 14% 99%, 13% 75%, 0% 75%); */
+    width: 50%;
+    height: 80px;
     top: 45%;
-    left: 26.5%;
+    left: 25.5%;
     z-index: 1;
-}
-
-/*------------------------*/
-
-.box8 {
-    padding: 3em;
-    font-family: myfont;
-}
-
-/*------------------------*/
-
-.stakingUI {
-    /* background: grey; */
-    width: 100%;
-    position: relative;
-    transform: translateX(10%);
-}
-
-.staking-text-wrapper {
-    /* background-color: rgb(37, 116, 89); */
-    display: grid;
-    grid-gap: 1em;
-    transform: translateX(-10%);
-}
-
-.staking-title {
-    color: whitesmoke;
-    font-family: myfont;
-    transform: translateY(70%);
-    font-weight: bold;
-}
-
-.staking-title:nth-child(3) {
-    color:rgb(255, 52, 52);
-}
-
-.staking-balance {
-    color: rgb(255, 52, 52);
-    font-family: myfont;
-    font-size: 30px;
-    transform: translateX(15%);
-}
-
-.staking-balance:nth-child(4) {
-    color: whitesmoke;
-}
-
-.staking-buttonBox {
-    position: absolute;
-    top: 30%;
-    right: 30%;
-    display: grid;
-    grid-gap: 3em;
-}
-
-.staking-claim-btn {
-    padding: 13px 25px;
-    background: linear-gradient(rgb(255, 52, 52) 0 100%) left / 0 no-repeat;
-    color: rgb(255, 52, 52);
-    border: 1px solid rgb(255, 52, 52);
-    font-family: myfont;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 1.1px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    cursor: pointer;
-}
-
-.staking-claim-btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 58px;
-    width: 190px;
-    border: 1px solid #868686;
-    z-index: -1;
-}
-
-/* .staking-claim-btn::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 10px;
-    width: 194px;
-    background-color: #121212;
-    z-index: -1;
-} */
-
-.staking-claim-btn:hover {
-    background-size: 100%;
-    color: whitesmoke;
-}
-
-.staking-claim-btn:focus {
-    outline: none;
-}
-
-.staking-approve-btn {
-    padding: 13px 25px;
-    background: linear-gradient(rgb(255, 52, 52) 0 100%) left / 0 no-repeat;
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    font-family: myfont;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 1.1px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    cursor: pointer;
-}
-
-.staking-approve-btn::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 58px;
-    width: 190px;
-    border: 1px solid #868686;
-    z-index: -1;
-}
-
-/* .staking-approve-btn::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 10px;
-    width: 194px;
-    background-color: #121212;
-    z-index: -1;
-} */
-
-.staking-approve-btn:hover {
-    background-size: 100%;
-    color: whitesmoke;
-    border: 1px solid rgb(255, 52, 52);
-}
-
-.staking-approve-btn:focus {
-    outline: none;
 }
 
 /*------------------------*/
@@ -238,7 +91,9 @@
 
 .image2 {
     background-image: url('../assets/staking-waifu1.png');
-    height: 70%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
     clip-path: polygon(25% 0, 0 25%, 25% 50%, 0 75%, 25% 100%, 50% 75%, 75% 100%, 100% 75%, 75% 50%, 100% 25%, 75% 0, 50% 25%);
     background-color: whitesmoke;
     background-position-x: 50%;
@@ -251,35 +106,188 @@
     background-color: rgb(255, 60, 60);
     text-align: center;
     padding: 1em 1em 2em 1em;
-    width: 255px;
-    height: 60px;
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 32% 75%, 14% 99%, 13% 75%, 0% 75%); */
+    width: 50%;
+    height: 80px;
     z-index: 1;
     top: 56%;
     left: 25%;
+}
+/*------------------------*/
+
+/*------------------------*/
+
+.stakingUI {
+    /* background: pink; */
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.staking-text-wrapper {
+    /* background-color: rgb(37, 116, 89); */
+    display: grid;
+    grid-gap: 1em;
+}
+
+.staking-title {
+    color: whitesmoke;
+    font-family: myfont;
+    transform: translateY(60%);
+    font-weight: bold;
+}
+
+.staking-title:nth-child(3) {
+    color:rgb(255, 52, 52);
+}
+
+.staking-balance {
+    color: rgb(255, 52, 52);
+    font-family: myfont;
+    font-size: 30px;
+    transform: translateX(15%);
+}
+
+.staking-balance:nth-child(4) {
+    color: whitesmoke;
+}
+
+.staking-buttonBox {
+    display: grid;
+    grid-gap: 2em;
+    align-items: center;
+}
+
+.staking-claim-btn {
+    padding: 13px 25px;
+    background: linear-gradient(rgb(255, 52, 52) 0 100%) left / 0 no-repeat;
+    color: rgb(255, 52, 52);
+    border: 1px solid rgb(255, 52, 52);
+    font-family: myfont;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    height: 80px;
+}
+
+.staking-claim-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 120%;
+    width: 110%;
+    border: 1px solid #868686;
+    z-index: -1;
+}
+
+.staking-claim-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 10px;
+    width: 120%;
+    background-color: #121212;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.staking-claim-btn:hover {
+    background-size: 100%;
+    color: whitesmoke;
+}
+.staking-claim-btn:hover:after {
+    height: 0;
+}
+
+.staking-claim-btn:focus {
+    outline: none;
+}
+
+.staking-approve-btn {
+    padding: 13px 25px;
+    background: linear-gradient(rgb(255, 52, 52) 0 100%) left / 0 no-repeat;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    font-family: myfont;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    height: 80px;   
+}
+
+.staking-approve-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 120%;
+    width: 110%;
+    border: 1px solid #868686;
+    z-index: -1;
+}
+
+.staking-approve-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 10px;
+    width: 120%;
+    background-color: #121212;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.staking-approve-btn:hover {
+    background-size: 100%;
+    color: whitesmoke;
+    border: 1px solid rgb(255, 52, 52);
+}
+.staking-approve-btn:hover:after {
+    height: 0;
+}
+
+
+.staking-approve-btn:focus {
+    outline: none;
 }
 
 /*------------------------*/
 
 .stakingUI2 {
-    /* background: grey; */
+    /* background: pink; */
+    display: flex;
+    gap: 5em;
+    justify-content: center;
     width: 100%;
     position: relative;
-    transform: translateX(9%);
-
 }
 
 .staking-text-wrapper2 {
     /* background-color: rgb(37, 116, 89); */
     display: grid;
     grid-gap: 1em;
-    transform: translateX(-10%);
 }
 
 .staking-title2 {
     color: whitesmoke;
     font-family: myfont;
-    transform: translateY(70%);
+    transform: translateY(60%);
     font-weight: bold;
 }
 
@@ -299,11 +307,9 @@
 }
 
 .staking-buttonBox2 {
-    position: absolute;
-    top: 30%;
-    right: -1%;
     display: grid;
-    grid-gap: 3em;
+    grid-gap: 2em;
+    align-items: center;
 }
 
 .staking-claim-btn2 {
@@ -318,6 +324,7 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     cursor: pointer;
+    height: 80px;
 }
 
 .staking-claim-btn2::before {
@@ -326,27 +333,32 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 58px;
-    width: 190px;
+    height: 120%;
+    width: 110%;
     border: 1px solid #868686;
     z-index: -1;
+    
 }
 
-/* .staking-claim-btn2::after {
+.staking-claim-btn2::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     height: 10px;
-    width: 194px;
+    width: 120%;
     background-color: #121212;
     z-index: -1;
-} */
+    transition: all 0.5s ease-in-out;
+}
 
 .staking-claim-btn2:hover {
     background-size: 100%;
     color: whitesmoke;
+}
+.staking-claim-btn2:hover:after {
+    height: 0;
 }
 
 .staking-claim-btn2:focus {
@@ -365,6 +377,7 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     cursor: pointer;
+    height: 80px;
 }
 
 .staking-approve-btn2::before {
@@ -373,146 +386,94 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 58px;
-    width: 190px;
+    height: 120%;
+    width: 110%;
     border: 1px solid #868686;
     z-index: -1;
 }
 
-/* .staking-approve-btn2::after {
+.staking-approve-btn2::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     height: 10px;
-    width: 194px;
+    width: 120%;
     background-color: #121212;
     z-index: -1;
-} */
+    transition: all 0.5s ease-in-out;
+}
 
 .staking-approve-btn2:hover {
     background-size: 100%;
     color: whitesmoke;
     border: 1px solid rgb(255, 52, 52);
 }
+.staking-approve-btn2:hover:after {
+    height: 0;
+}
 
 .staking-approve-btn2:focus {
     outline: none;
 }
 
-@media only screen and (max-width:1350px) {
+@media only screen and (max-width:2400px) {
     .staking-gridbox {
-        transform: scale(0.9);
-        width: 100%;
-        height: 100%;
+        width: 60%;
     }
 }
-
-@media only screen and (max-width:1250px) {
+@media only screen and (max-width:1800px) {
     .staking-gridbox {
-        transform: scale(0.8);
-        width: 100%;
-        height: 100%;
+        width: 70%;
     }
 }
-
-@media only screen and (max-width:900px) { 
+@media only screen and (max-width:1400px) {
     .staking-gridbox {
-        transform: scale(0.65);
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media only screen and (max-width:1366px) and (max-height:768px){ 
-    .image1, .image2 {
-        height: 100%;
-    }
-
-    .dialogue1 {
-        top: 60%;
-        left: 25%;
-    }
-
-    .dialogue2 {
-        top: 60%;
-        left: 25%;
-    }
-}
-
-@media only screen and (max-width: 730px) {
-
-    .staking {
-        height: 100%;
-        transform: translateY(-12%);
-    }
-
-    .staking-gridbox {
-        width: 100%;
-        grid-template-columns: 500px;
-        grid-template-rows: repeat(0.25vh,1fr);
-        grid-gap: 7em;
-    }
-
-    .box6, .box7 {
-        height: 400px;
-        transform: translateY(8%);
-    }
-
-    .box5, .box8 {
-        height: 100%;
-    }
-
-    .box7 {
-        position: absolute;
         width: 80%;
-        transform: translate(11%,220%);
-    }
-
-    .image1, .image2 {
-        height: 100%;
-    }
-
-    .stakingUI2 {
-        left: -10%;
-    }
-
-    .staking-buttonBox {
-        right: 15%;
-    }
-
-    .staking-buttonBox2 {
-        right: -5%;
-    }
-
-    .staking-logo-mobile {
-        display: block;
-        position: fixed;
-        z-index: -1;
-        bottom: -20%;
-        right: -18%;
-        filter: brightness(0.3);
     }
 }
-
-@media only screen and (max-width: 500px) { 
-    .staking-logo-mobile {
-        transform: scale(0.6);
-        top: 65%;
-        right: -35%;
+@media only screen and (max-width:1200px) {
+    .staking-gridbox {
+        width: 60%;
+        grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
     }
-
-    .dialogue1 {
-        padding:10px;
-        width: 47%;
-    }
-    .dialogue2 {
-        padding:10px;
-        width: 50%;
+    .box6, .box7, .box5, .box8  {
+        height: 428px;
     }
     .box7 {
-        width: 100%;
-        transform: translate(1%,220%);
+        grid-row: 4;
     }
 }
+@media only screen and (max-width:600px) {
+    .staking-gridbox {
+        width: 90%;
+        grid-template-columns: repeat(auto-fit,minmax(3 00px,1fr));
+    }
+    .box6, .box7, .box5, .box8 {
+        width: 90%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:470px) {
+    .box6, .box7, .box5, .box8 {
+        width: 70%;
+        margin: auto;
+    }
+    .staking-title, .staking-title2 {
+        /* transform: translateY(60%); */
+        /* background-color: pink; */
+        width: 120%;
+    }
+}
+@media only screen and (max-width:375px) {
+    .box6, .box7, .box5, .box8 {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+
+
+
+

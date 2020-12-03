@@ -1,13 +1,14 @@
 import React from 'react';
 import '../css/secondroute.css'
-import Wave from "../components/WaveBackground.js";
+import Birds from '../components/Birds'
 import NavBar from "../components/NavBar.js"
 
 function SecondRoute() {
     return(
         <div className="secondroute">
             <NavBar />
-            <Wave />
+            {/* <Wave /> */}
+            <Birds />
         </div>
     )
 }

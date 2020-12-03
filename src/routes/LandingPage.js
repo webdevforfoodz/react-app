@@ -5,16 +5,20 @@ import moon from '../assets/moon.png'
 import lantern from '../assets/lantern1.png'
 import shywaifu from '../assets/shywaifu.png'
 import welcomewaifu from '../assets/welcome-waifu.png'
+import layingwaifu from '../assets/layingwaifu.png'
 import { Link } from "react-router-dom";
 import Logo from '../components/LogoLanding';
+import Birds from '../components/Birds'
 
 function LandingPage() {
 
     return(
         <div className="landingpage" >
+            <Birds />
             <Logo />
             <img className="landingpage-moon" src={moon} alt=""/>
             <div className="landingpage-img-wrapper">
+
                 <div className="landingpage-img-container">
                     <ul className="landingpage-menu" >
                         <Link className="landingpage-link" to='/gallery'  >
@@ -29,6 +33,7 @@ function LandingPage() {
                     </ul>
                     <img className="landingpage-shywaifu" src={shywaifu} alt=""/>
                     <img className="landingpage-welcomewaifu" src={welcomewaifu} alt=""/>
+                    <img className="landingpage-layingwaifu" src={layingwaifu} alt=""/>
                     <img className="landingpage-lantern" src={lantern} alt=""/>
                     <img className="landingpage-lantern" src={lantern} alt=""/>
                     <img className="landing-gate" src={gate} alt=""/>
