@@ -95,7 +95,8 @@ function Gallery() {
             </div>
             <div className="gallery">
                 {result.map(nft => (
-                    <NFTCard name={nft.name} rarity={nft.rarity} image={nft.image} key={nft.id} id={nft.id}/>
+                    <NFTCard name={nft.name} rarity={nft.rarity} image={nft.image} 
+                            key={nft.id} id={nft.id} availability={nft.availability} price={nft.price}/>
                 ))}
             </div>
         </>

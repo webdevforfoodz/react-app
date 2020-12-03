@@ -15,6 +15,12 @@ function NFTCard(props) {
             <div className="NFT-card-rarity">
                 {props.rarity}
             </div>
+            <div className="NFT-card-availability">
+                {props.availability !== '0/20' ? props.availability : 'Out of stock'}
+            </div>
+            <div className="NFT-card-price">
+                {props.price}
+            </div>
         </div>
     )
 }

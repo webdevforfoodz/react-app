@@ -19,12 +19,16 @@
 } 
 
 .NFT-card-name {
-    color: grey;
+    color: rgb(138, 138, 138);
     padding-top: 10px;
 }
 
 .NFT-card-rarity {
     color: goldenrod;
+}
+
+.NFT-card-price {
+    color: rgb(0, 153, 8);
 }
 
 .rarity-filter-searchbar {

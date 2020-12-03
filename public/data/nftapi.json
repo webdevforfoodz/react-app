@@ -3,36 +3,49 @@
         "id": "2",
         "name": "Witch Enjin",
         "rarity": "Heirloom",
-        "image": "/data/enjin.jpg"
+        "image": "/data/enjin.jpg",
+        "availability": "20/20",
+        "price": "50 HAREMS"
     },
     {
         "id": "3",
         "name": "Lord ADA",
         "rarity": "Legendary",
-        "image": "/data/legendary.gif"
+        "image": "/data/legendary.gif",
+        "availability": "15/20",
+        "price": "40 HAREMS"
+        
     },
     {
         "id": "4",
         "name": "RSR Boss",
         "rarity": "Legendary",
-        "image": "/data/legendary1.gif"
+        "image": "/data/legendary1.gif",
+        "availability": "10/20",
+        "price": "40 HAREMS"
     },
     {
         "id": "6",
         "name": "Random",
         "rarity": "Super Rare",
-        "image": "/data/unnamed.gif"
+        "image": "/data/unnamed.gif",
+        "availability": "0/20",
+        "price": "30 HAREMS"
     },
     {
         "id": "5",
         "name": "RSR Boss",
         "rarity": "Rare",
-        "image": "/data/rsr.gif"
+        "image": "/data/rsr.gif",
+        "availability": "2/20",
+        "price": "20 HAREMS"
     },
     {
         "id": "1",
         "name": "Queen of The East",
         "rarity": "Common",
-        "image": "/data/bnbcommon.gif"
+        "image": "/data/bnbcommon.gif",
+        "availability": "5/20",
+        "price": "10 HAREMS"
     }
 ]

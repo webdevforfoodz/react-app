@@ -27,9 +27,14 @@ function NFTDetail({match}) {
                     <img src={process.env.PUBLIC_URL + NFT.image} alt=""/>
                 </div>
                 <div className="nft-detail-details">
-                    <span>ID: {NFT.id}</span>
-                    <span>Name: {NFT.name}</span>
-                    <span>Rarity: {NFT.rarity}</span>
+                    <li>ID: <span>{NFT.id}</span> </li>
+                    <li>Name: <span>{NFT.name}</span> </li>
+                    <li>Rarity: <span>{NFT.rarity}</span></li>
+                    <li>Price: <span>{NFT.price}</span> </li>
+                    <div className="nft-detail-btn-box">
+                        <button>Buy</button>
+                        <button>Sell</button>
+                    </div>
                 </div>
             </div>
         )
