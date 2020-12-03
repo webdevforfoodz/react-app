@@ -1,4 +1,20 @@
-[
+[   
+    {
+    "id": "7",
+    "name": "YFI Strategist",
+    "rarity": "Heirloom",
+    "image": "/data/yfi.gif",
+    "availability": "2/2",
+    "price": "500 HAREMS",
+    "generation": "Second",
+    "production": "2020",
+    "owner": {
+        "address": "0xB2279B6769CFBa691416F00609b16244c0cF4b20",
+        "pricebought": "300 HAREMS",
+        "pricesold": "320 HAREMS",
+        "tx": "0xB2279B6769CFBa691416F00609b16244c0cF4b20"
+    }
+    },
     {
         "id": "2",
         "name": "Witch Enjin",

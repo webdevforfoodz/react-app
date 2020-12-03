@@ -53,7 +53,7 @@ function Staking() {
               }
               {nsfwStatus &&
                 <div>
-                    <Typer dataText={["I was just getting started?", "Do you want to join me?"]}/>
+                    <Typer dataText={["I was just getting started.", "Do you want to join me?"]}/>
                 </div>
               }
             </div>
