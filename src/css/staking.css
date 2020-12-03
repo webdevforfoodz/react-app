@@ -5,6 +5,18 @@
     min-height: 100vh;
     display: flex;
     background-color: #121212;
+    background-image: url('../assets/staking-bg.jpg');
+    background-size: cover;
+}
+
+.staking::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right,rgba(0,0,0,0.7),rgba(0,0,0,0.9));
 }
 
 .staking-gridbox {
@@ -61,6 +73,16 @@
     background-position-x: 40%;
     background-repeat: no-repeat;
 }
+.image3 {
+    background-image: url('../assets/nsfw-waifu1.png');
+    height: 100%;
+    background-size: 80%;
+    background-position: center;
+    clip-path: polygon(0 30%, 30% 30%, 30% 0, 70% 0, 70% 30%, 100% 30%, 100% 70%, 70% 70%, 70% 100%, 30% 100%, 30% 70%, 0 70%);
+    background-color: whitesmoke;
+    background-position-x: 40%;
+    background-repeat: no-repeat;
+}
 
 .dialogue1 {
     position: absolute;
@@ -99,6 +121,16 @@
     background-position-x: 50%;
     background-repeat: no-repeat;
 }
+.image4 {
+    background-image: url('../assets/nsfw-waifu.png');
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    clip-path: polygon(25% 0, 0 25%, 25% 50%, 0 75%, 25% 100%, 50% 75%, 75% 100%, 100% 75%, 75% 50%, 100% 25%, 75% 0, 50% 25%);
+    background-color: whitesmoke;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+}
 
 
 .dialogue2 {
@@ -112,6 +144,12 @@
     top: 56%;
     left: 25%;
 }
+.nsfw {
+    left: 70%;
+    top: 45%;
+}
+
+
 /*------------------------*/
 
 /*------------------------*/
@@ -171,7 +209,7 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     cursor: pointer;
-    height: 80px;
+    height: 60px;
 }
 
 .staking-claim-btn::before {
@@ -180,13 +218,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 120%;
+    height: 130%;
     width: 110%;
-    border: 1px solid #868686;
-    z-index: -1;
+    border: 1px solid  #868686;
+    z-index: 0;
 }
 
-.staking-claim-btn::after {
+/* .staking-claim-btn::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -196,9 +234,8 @@
     width: 120%;
     background-color: #121212;
     z-index: -1;
-    transition: all 0.5s ease-in-out;
-
-}
+    transition: all 0.2s ease-in-out;
+} */
 
 .staking-claim-btn:hover {
     background-size: 100%;
@@ -224,7 +261,7 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     cursor: pointer;
-    height: 80px;   
+    height: 60px;   
 }
 
 .staking-approve-btn::before {
@@ -233,13 +270,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 120%;
+    height: 130%;
     width: 110%;
     border: 1px solid #868686;
-    z-index: -1;
+    z-index: 0;
 }
 
-.staking-approve-btn::after {
+/* .staking-approve-btn::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -249,9 +286,8 @@
     width: 120%;
     background-color: #121212;
     z-index: -1;
-    transition: all 0.5s ease-in-out;
-
-}
+    transition: all 0.2s ease-in-out;
+} */
 
 .staking-approve-btn:hover {
     background-size: 100%;
@@ -324,7 +360,7 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     cursor: pointer;
-    height: 80px;
+    height: 60px;
 }
 
 .staking-claim-btn2::before {
@@ -333,14 +369,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 120%;
+    height: 130%;
     width: 110%;
     border: 1px solid #868686;
-    z-index: -1;
+    z-index: 0;
     
 }
 
-.staking-claim-btn2::after {
+/* .staking-claim-btn2::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -350,8 +386,8 @@
     width: 120%;
     background-color: #121212;
     z-index: -1;
-    transition: all 0.5s ease-in-out;
-}
+    transition: all 0.2s ease-in-out;
+} */
 
 .staking-claim-btn2:hover {
     background-size: 100%;
@@ -377,7 +413,7 @@
     transition: all 0.3s ease-in-out;
     position: relative;
     cursor: pointer;
-    height: 80px;
+    height: 60px;
 }
 
 .staking-approve-btn2::before {
@@ -386,13 +422,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 120%;
+    height: 130%;
     width: 110%;
     border: 1px solid #868686;
-    z-index: -1;
+    z-index: 0;
 }
 
-.staking-approve-btn2::after {
+/* .staking-approve-btn2::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -402,8 +438,8 @@
     width: 120%;
     background-color: #121212;
     z-index: -1;
-    transition: all 0.5s ease-in-out;
-}
+    transition: all 0.2s ease-in-out;
+} */
 
 .staking-approve-btn2:hover {
     background-size: 100%;
@@ -416,6 +452,34 @@
 
 .staking-approve-btn2:focus {
     outline: none;
+}
+
+.NSFW {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: myfont;
+}
+
+.toggle {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    color: whitesmoke;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.off {
+    display: none;
+}
+
+@media only screen and (max-height: 1200px) {
+    .image3{
+        background-position-y: 30%; 
+    }
 }
 
 @media only screen and (max-width:2400px) {
