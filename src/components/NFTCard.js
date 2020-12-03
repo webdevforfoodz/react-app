@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 function NFTCard(props) {
+
+
+
     return(
         <div className="NFT-card-wrapper" >
             <Link to={'/gallery/' + props.id} >

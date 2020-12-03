@@ -1,5 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import '../css/nftdetail.css'
+import {IoMdArrowBack } from 'react-icons/io';
+import {Link} from 'react-router-dom'
 
 function NFTDetail({match}) {
 
@@ -23,18 +25,59 @@ function NFTDetail({match}) {
 
         return(
             <div className="nft-detail">
-                <div className="nft-detail-img-wrapper">
-                    <img src={process.env.PUBLIC_URL + NFT.image} alt=""/>
-                </div>
-                <div className="nft-detail-details">
-                    <li>ID: <span>{NFT.id}</span> </li>
-                    <li>Name: <span>{NFT.name}</span> </li>
-                    <li>Rarity: <span>{NFT.rarity}</span></li>
-                    <li>Price: <span>{NFT.price}</span> </li>
-                    <div className="nft-detail-btn-box">
-                        <button>Buy</button>
-                        <button>Sell</button>
+                <Link to="/gallery" className="nft-detai-arrowback">
+                        <IoMdArrowBack  />
+                </Link>
+                <div className="nft-detail-card-info">
+                    <div className="nft-detail-img-wrapper">
+                        <img src={process.env.PUBLIC_URL + NFT.image} alt=""/>
                     </div>
+                    <div className="nft-detail-info-list">
+                        <li>
+                            {NFT.name}
+                            <div className="nft-detail-info-box">
+                                <span>ID: {NFT.id}</span>
+                                <span>Rarity: {NFT.rarity}</span>
+                                <span>Availability: {NFT.availability}</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span className="nft-detail-price" >Price: {NFT.price}</span>
+                            <div className="nft-detail-btn-box">
+                                <button className="nft-detail-buy-btn" >Buy</button>
+                                <button className="nft-detail-sell-btn" >Sell</button>
+                            </div>
+                        </li>
+                        <li>
+                            <span className="nft-detail-price" >Details: </span>
+                            <div className="box">
+                                <span >Generation: {NFT.generation}</span>
+                                <span >Production Date: {NFT.production}</span>
+                            </div>
+                        </li>
+                        
+                    </div>
+                </div>
+                <div className="nft-detail-history">
+                        <span>History</span>
+                        <ul>
+                            <li>
+                                Previous Owner
+                                {/* <span>{NFT.owner.address}</span> */}
+                            </li>
+                            <li>
+                                Price bought
+                                {/* <span>{NFT.owner.pricebought}</span> */}
+                            </li>
+                            <li>
+                                Price sold
+                                {/* <span>{NFT.owner.pricesold}</span> */}
+                            </li>
+                            <li>
+                                Tx
+                                {/* <span>{NFT.owner.tx}</span> */}
+                            </li>
+                        </ul>
                 </div>
             </div>
         )

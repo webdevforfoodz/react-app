@@ -5,7 +5,15 @@
         "rarity": "Heirloom",
         "image": "/data/enjin.jpg",
         "availability": "20/20",
-        "price": "50 HAREMS"
+        "price": "50 HAREMS",
+        "generation": "Second",
+        "production": "2020",
+        "owner": {
+            "address": "0xB2279B6769CFBa691416F00609b16244c0cF4b20",
+            "pricebought": "300 HAREMS",
+            "pricesold": "320 HAREMS",
+            "tx": "0xB2279B6769CFBa691416F00609b16244c0cF4b20"
+        }
     },
     {
         "id": "3",
@@ -13,7 +21,15 @@
         "rarity": "Legendary",
         "image": "/data/legendary.gif",
         "availability": "15/20",
-        "price": "40 HAREMS"
+        "price": "40 HAREMS",
+        "generation": "Second",
+        "production": "2020",
+        "owner": {
+            "address": "0xB2279B6769CFBa691416F00609b16244c0cF4b20",
+            "pricebought": "300 HAREMS",
+            "pricesold": "320 HAREMS",
+            "tx": "0xB2279B6769CFBa691416F00609b16244c0cF4b20"
+        }
         
     },
     {
@@ -22,7 +38,15 @@
         "rarity": "Legendary",
         "image": "/data/legendary1.gif",
         "availability": "10/20",
-        "price": "40 HAREMS"
+        "price": "40 HAREMS",
+        "generation": "Second",
+        "production": "2020",
+        "owner": {
+            "address": "0xB2279B6769CFBa691416F00609b16244c0cF4b20",
+            "pricebought": "300 HAREMS",
+            "pricesold": "320 HAREMS",
+            "tx": "0xB2279B6769CFBa691416F00609b16244c0cF4b20"
+        }
     },
     {
         "id": "6",
@@ -30,7 +54,15 @@
         "rarity": "Super Rare",
         "image": "/data/unnamed.gif",
         "availability": "0/20",
-        "price": "30 HAREMS"
+        "price": "30 HAREMS",
+        "generation": "Second",
+        "production": "2020",
+        "owner": {
+            "address": "0xB2279B6769CFBa691416F00609b16244c0cF4b20",
+            "pricebought": "300 HAREMS",
+            "pricesold": "320 HAREMS",
+            "tx": "0xB2279B6769CFBa691416F00609b16244c0cF4b20"
+        }
     },
     {
         "id": "5",
@@ -38,7 +70,15 @@
         "rarity": "Rare",
         "image": "/data/rsr.gif",
         "availability": "2/20",
-        "price": "20 HAREMS"
+        "price": "20 HAREMS",
+        "generation": "Second",
+        "production": "2020",
+        "owner": {
+            "address": "0xB2279B6769CFBa691416F00609b16244c0cF4b20",
+            "pricebought": "300 HAREMS",
+            "pricesold": "320 HAREMS",
+            "tx": "0xB2279B6769CFBa691416F00609b16244c0cF4b20"
+        }
     },
     {
         "id": "1",
@@ -46,6 +86,14 @@
         "rarity": "Common",
         "image": "/data/bnbcommon.gif",
         "availability": "5/20",
-        "price": "10 HAREMS"
+        "price": "10 HAREMS",
+        "generation": "Second",
+        "production": "2020",
+        "owner": {
+            "address": "0xB2279B6769CFBa691416F00609b16244c0cF4b20",
+            "pricebought": "300 HAREMS",
+            "pricesold": "320 HAREMS",
+            "tx": "0xB2279B6769CFBa691416F00609b16244c0cF4b20"
+        }
     }
 ]
