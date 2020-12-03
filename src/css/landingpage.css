@@ -25,7 +25,8 @@
     align-items: end;
     text-align: center;
     min-height: 100vh;
-    width: 100%;
+    width: 95%;
+    margin: auto;
     /* background-color: orange; */
 }
 
@@ -34,7 +35,7 @@
 }
 
 .landing-gate {
-    width: 1000px;
+    width: 100%;
     position: relative;
     z-index: 1;
 }
@@ -80,12 +81,11 @@
         filter: brightness(0.8);
     }
 }
-
 .landingpage-moon {
     position: absolute;
     top: 0;
     left: 0%;
-    width: 150px;
+    width: 10%;
     animation: moon 2s linear infinite;
     -moz-animation: moon  2s linear infinite;
     -webkit-animation: moon  2s linear infinite;
@@ -99,6 +99,37 @@
         filter: brightness(0.7);
         transform: translateY(-5px)
     }
+}
+/*---landing-menu---*/
+.landingpage-menu {
+    position: absolute;
+    list-style-type: none;
+    left: 50%;
+    top: 45%;
+    line-height: 3em;
+    font-family: myfont;
+    font-size: 35px;
+    /* background-color: pink; */
+    transform: translate(-45%,0);
+    z-index: 2;
+}
+
+.landingpage-link {
+    text-decoration: none;
+    color: whitesmoke;
+    cursor: pointer;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    background: linear-gradient(rgb(255, 64, 64) 0 100%) left / 0 no-repeat;
+    color: transparent;
+    background-clip: text;
+    transition: all 0.4s linear;
+}
+.landingpage-link:hover {
+    background-size: 100%;
+    -webkit-text-stroke: 1px rgb(255, 64, 64);
+    text-shadow: none;
+
 }
 
 /*---landing-logo---*/
@@ -119,13 +150,13 @@
     animation: landingneon 1s ease infinite;
     -moz-animation: landingneon  1s ease infinite;
     -webkit-animation: landingneon  1s ease infinite;
-    font-size: 300%;
+    font-size: 50px;
 }
 .landing-logo-title1 {
     animation: landingneon1 1s ease infinite;
     -moz-animation: landingneon1  1s ease infinite;
     -webkit-animation: landingneon1  1s ease infinite;
-    font-size: 800%;
+    font-size: 120px;
 }
   
   
@@ -153,219 +184,114 @@
     }
 } 
 
-/*---landing-menu---*/
-.landingpage-menu {
-    position: absolute;
-    list-style-type: none;
-    left: 50%;
-    top: 50%;
-    line-height: 3em;
-    font-family: myfont;
-    font-size: 250%;
-    /* background-color: pink; */
-    transform: translate(-45%,0);
-    z-index: 2;
-}
-
-.landingpage-link {
-    text-decoration: none;
-    color: whitesmoke;
-    cursor: pointer;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1px white;
-    background: linear-gradient(rgb(255, 64, 64) 0 100%) left / 0 no-repeat;
-    color: transparent;
-    background-clip: text;
-    transition: all 0.4s linear;
-}
-.landingpage-link:hover {
-    background-size: 100%;
-    -webkit-text-stroke: 1px rgb(255, 64, 64);
-    text-shadow: none;
-
-}
 
 
-@media only screen and (max-width: 2300px) {
-    .landing-gate {
-        width: 800px;
-    }
+
+@media only screen and (max-width: 650px) {
     .landingpage-menu {
-        top: 50%;
-        font-size: 200%;
+        top: 45%;
+        font-size: 30px;
     }
     .landing-logo-title {
-        font-size: 250%;
+        font-size: 35px;
     }
     .landing-logo-title1 {
-        font-size: 750%;
+        font-size: 100px;
     }
     .landing-logo-img-wrapper {
-        top: 5%;
+        top: 15%;
     }
 }
-@media only screen and (max-width: 1500px) {
-    .landing-gate {
-        width: 700px;
-    }
+@media only screen and (max-width: 500px) {
     .landingpage-menu {
-        top: 50%;
-        font-size: 200%;
+        top: 45%;
+        font-size: 23px;
+}
+}
+@media only screen and (max-width: 500px) {
+    .landingpage-menu {
+        top: 45%;
+        font-size: 17px;
     }
     .landing-logo-title {
-        font-size: 250%;
+        font-size: 25px;
     }
     .landing-logo-title1 {
-        font-size: 750%;
+        font-size: 70px;
     }
     .landing-logo-img-wrapper {
-        top: 5%;
+        top: 25%;
     }
 }
-@media only screen and (max-width: 1600px) and (max-height:900px) {
+@media only screen and (max-height: 1200px) {
     .landing-gate {
-        width: 600px;
-    }
-    .landingpage-menu {
-        top: 50%;
-        font-size: 200%;
-    }
-    .landing-logo-title {
-        font-size: 200%;
-    }
-    .landing-logo-title1 {
-        font-size: 550%;
-    }
-    .landing-logo-img-wrapper {
-        top: 5%;
-    }
-}
-@media only screen and (max-width: 1300px) and (max-height:800px) {
-    .landing-gate {
-        width: 500px;
+        width:700px;
     }
     .landingpage-menu {
         top: 45%;
-        font-size: 170%;
+        font-size: 35px;
     }
     .landing-logo-title {
-        font-size: 200%;
+        font-size: 40px;
     }
     .landing-logo-title1 {
-        font-size: 550%;
+        font-size: 100px;
     }
     .landing-logo-img-wrapper {
-        top: 5%;
+        top: 10%;
     }
 }
-@media only screen and (max-width: 1060px) and (max-height:690px) {
+@media only screen and (max-height: 1000px) {
     .landing-gate {
-        width: 400px;
+        width:600px;
     }
     .landingpage-menu {
         top: 45%;
-        font-size: 150%;
+        font-size: 30px;
     }
     .landing-logo-title {
-        font-size: 170%;
+        font-size: 35px;
     }
     .landing-logo-title1 {
-        font-size: 450%;
+        font-size: 90px;
     }
     .landing-logo-img-wrapper {
-        top: 9%;
-    }
-    .landingpage-moon {
-        width: 100px;
+        top: 10%;
     }
 }
-@media only screen and (max-width: 850px) and (max-height:1300px) {
+@media only screen and (max-height: 860px) {
     .landing-gate {
-        width: 600px;
+        width:400px;
     }
     .landingpage-menu {
         top: 45%;
-        font-size: 170%;
+        font-size: 20px;
     }
     .landing-logo-title {
-        font-size: 170%;
+        font-size: 25px;
     }
     .landing-logo-title1 {
-        font-size: 500%;
+        font-size: 70px;
     }
     .landing-logo-img-wrapper {
-        top: 12%;
+        top: 15%;
     }
 }
-@media only screen and (max-width: 850px) and (max-height:900px) {
+@media only screen and (max-height: 690px) {
     .landing-gate {
-        width: 500px;
+        width:380px;
     }
     .landingpage-menu {
         top: 45%;
-        font-size: 150%;
+        font-size: 17px;
     }
     .landing-logo-title {
-        font-size: 130%;
+        font-size: 22px;
     }
     .landing-logo-title1 {
-        font-size: 400%;
+        font-size: 65px;
     }
     .landing-logo-img-wrapper {
-        top: 12%;
-    }
-}
-@media only screen and (max-width: 550px) and (max-height:900px) {
-    .landing-gate {
-        width: 380px;
-    }
-    .landingpage-menu {
-        top: 45%;
-        font-size: 120%;
-    }
-    .landing-logo-title {
-        font-size: 110%;
-    }
-    .landing-logo-title1 {
-        font-size: 300%;
-    }
-    .landing-logo-img-wrapper {
-        top: 8%;
-    }
-}
-@media only screen and (max-width: 460px) and (max-height:820px) {
-    .landing-gate {
-        width: 280px;
-    }
-    .landingpage-menu {
-        top: 45%;
-        font-size: 120%;
-    }
-    .landing-logo-title {
-        font-size: 110%;
-    }
-    .landing-logo-title1 {
-        font-size: 300%;
-    }
-    .landing-logo-img-wrapper {
-        top: 22%;
-    }
-}
-@media only screen and (max-width: 430px) and (max-height:680px) {
-    .landing-gate {
-        width: 300px;
-    }
-    .landingpage-menu {
-        top: 45%;
-        font-size: 120%;
-    }
-    .landing-logo-title {
-        font-size: 110%;
-    }
-    .landing-logo-title1 {
-        font-size: 300%;
-    }
-    .landing-logo-img-wrapper {
-        top: 8%;
+        top: 15%;
     }
 }
